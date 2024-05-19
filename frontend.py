@@ -1,7 +1,10 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-BASE_URL = "http://localhost:5000"
+BASE_URL = os.getenv('API_URL')
 
 
 def menu():
